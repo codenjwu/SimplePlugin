@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimplePlugin.Common.Test\SimplePlugin.Common.Test.csproj" />
+    <ProjectReference Include="..\SimplePlugin.Plugin2.Service.Test\SimplePlugin.Plugin2.Service.Test.csproj" />
+    <ProjectReference Include="..\SimplePlugin\SimplePlugin.csproj" />
+  </ItemGroup>
+
+</Project>
